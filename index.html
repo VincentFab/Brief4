@@ -8,30 +8,39 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!-- début du background -->
     <div class="background">
+        <!-- page d'accueil  -->
         <div class="home" id="home_page">    
             <h1 class="title_container">Quizz des Drapeaux</h1>
              <div class="button_container">
-                <div>
+                <div> 
+                    <!-- bouton de décor -->
                     <button  class="start_button blue_button">Trouve le pays</button>
                 </div>
                 <div>
+                    <!-- bouton de lancement de la partie -->
                     <button  class="start_button red_button" id="home_flag">Trouve le drapeau</button>
                 </div>
              </div>
         </div>
+        <!-- fin de page d'accueil -->
+        <!-- page de question avec les drapeaux -->
         <div class="no_display quizz_page" id="quizz">
             <div class="question_container">
+                <!-- Question du quizz -->
                 <h2 class="title_container_flag">Quel est le drapeau de ce pays ?</h2>
+                <!-- Pays concerner par la question -->
                 <h2 class="flag_name_container">Somalie</h2>
             </div>
             <div class="flags_all_container">
             <div class="one_two_flag">
+                <!-- Les 4 drapeaux proposé -->
                 <div >
                    <button class="button_pad1"><img src="./img/Flags/Flag_of_Barbados.svg.png" alt="Barbados flag" class="flag_container one_two_flag wrong_answer"></button>
                 </div>
                 <div>
-                    <button class="button_pad1"><img src="./img/Flags/Flag_of_Eswatini.svg.png" alt="Eswatini flag" class="flag_container one_two_flag wrong_answer"></button>
+                    <button class="button_pad1"><img src="./img/Flags/Flag_of_Eswatini.svg.png" alt="Eswatini flag" class="flag_container one_two_flag wrong_answer" id="test"></button>
                 </div>
             </div>
             <div class="three_four_flag">
@@ -44,7 +53,47 @@
             </div>
             </div>
         </div>
-    </div>   
+        <!-- fin de page question -->
+        <!-- page de bonne réponse  -->
+        <div class="ganswer_page no_display" id="good_answer_page"> 
+            <!-- Zone d'annonce si gagné ou perdu -->
+            <h1 class="title_container">Bonne Réponse</h1>
+             <div class="text_button_container">
+                <div class="answer_text_container">
+                    <!-- texte pour raconter la création du drapeau ou une anecdote dessus -->
+                    <p class="answer_text">Le drapeau de la Somalie est le drapeau national et le pavillon national de la République fédérale de Somalie. Il est adopté le 12 octobre 1954. Le drapeau dessiné par Mohammed Awale Liban devait être utilisé pour la Somalie britannique mais fut finalement attribué au nouveau pays issu de la fusion entre la Somalie italienne et la Somalie britannique.
+                        Selon M. Liban, le drapeau devait ressembler au drapeau de l'ONU qui a aidé la Somalie à gagner son indépendance de l'Italie.<br> Les cinq branches de l'étoile symbolisent les cinq zones où vivent les Somalis : la Somalie britannique, la Somalie italienne, la Somalie française (Djibouti), l'Ogaden (Éthiopie) et le Nord du Kenya.
+                    </p>
+                </div>
+                <div>
+                    <!-- bouton pour passer a la question suivante -->
+                    <button  class="next_button black_button" id="suivant_button_good">Suivant</button>
+                </div>
+             </div>
+        </div>  
+        <!-- fin de page bonne réponse -->
+        <!-- page de réponse  -->
+        <div class="wanswer_page no_display" id="wrong_answer_page"> 
+            <!-- Zone d'annonce si gagné ou perdu -->
+            <h1 class="title_container">Mauvaise réponse</h1>
+             <div class="text_button_container">
+                <div class="answer_text_container">
+                    <!-- texte pour raconter la création du drapeau ou une anecdote dessus -->
+                    <p class="answer_text">Le drapeau de la Somalie est le drapeau national et le pavillon national de la République fédérale de Somalie. Il est adopté le 12 octobre 1954. Le drapeau dessiné par Mohammed Awale Liban devait être utilisé pour la Somalie britannique mais fut finalement attribué au nouveau pays issu de la fusion entre la Somalie italienne et la Somalie britannique.
+                        Selon M. Liban, le drapeau devait ressembler au drapeau de l'ONU qui a aidé la Somalie à gagner son indépendance de l'Italie.<br> Les cinq branches de l'étoile symbolisent les cinq zones où vivent les Somalis : la Somalie britannique, la Somalie italienne, la Somalie française (Djibouti), l'Ogaden (Éthiopie) et le Nord du Kenya.
+                    </p>
+                </div>
+                <div>
+                    <!-- bouton pour passer a la question suivante -->
+                    <button  class="next_button black_button" id="suivant_button_wrong">Suivant</button>
+                </div>
+             </div>
+        </div>  
+        <!-- fin de page réponse -->
+    </div>  
+    <!-- fin du background-->
+    <!-- Le <script src="./script.ts"></script> doit toujours être le dernier du <body> -->
     <script src="./script.ts"></script>
+    <!-- Ne rien mettre après ça dans le <body> -->
 </body>
 </html>
