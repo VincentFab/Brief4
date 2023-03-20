@@ -8,7 +8,43 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>hello world</h1>
-    <script src="./index.ts"></script>
+    <div class="background">
+        <div class="home" id="home_page">    
+            <h1 class="title_container">Quizz des Drapeaux</h1>
+             <div class="button_container">
+                <div>
+                    <button  class="start_button blue_button">Trouve le pays</button>
+                </div>
+                <div>
+                    <button  class="start_button red_button" id="home_flag">Trouve le drapeau</button>
+                </div>
+             </div>
+        </div>
+        <div class="no_display quizz_page" id="quizz">
+            <div class="question_container">
+                <h2 class="title_container_flag">Quel est le drapeau de ce pays ?</h2>
+                <h2 class="flag_name_container">Somalie</h2>
+            </div>
+            <div class="flags_all_container">
+            <div class="one_two_flag">
+                <div >
+                   <button class="button_pad1"><img src="./img/Flags/Flag_of_Barbados.svg.png" alt="Barbados flag" class="flag_container one_two_flag wrong_answer"></button>
+                </div>
+                <div>
+                    <button class="button_pad1"><img src="./img/Flags/Flag_of_Eswatini.svg.png" alt="Eswatini flag" class="flag_container one_two_flag wrong_answer"></button>
+                </div>
+            </div>
+            <div class="three_four_flag">
+                <div>
+                    <button class="button_pad2"><img src="./img/Flags/Flag_of_Somalia.svg.png" alt="Somalia flag" class="flag_container three_four_flag good_answer"></button>
+                </div>
+                <div>
+                    <button class="button_pad2"><img src="./img/Flags/Flag_of_San_Marino.svg.png" alt="San Marino flag" class="flag_container three_four_flag wrong_answer"></button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>   
+    <script src="./script.ts"></script>
 </body>
 </html>

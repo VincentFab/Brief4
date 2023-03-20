@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+.background{
+    background-image: url('./img/trianglify-lowres.png');
+    background-size: cover;
+    background-position: center;
+}
+.home{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.title_container{
+    display: flex;
+    width: 290px;
+    height: 90px;
+    background-color: #000000;
+    border-radius: 60px;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+}
+.button_container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 160px;
+}
+.start_button{
+    display: flex;
+    justify-content: space-around;
+    width: 290px;
+    height: 59px;
+    border-radius: 60px;
+    align-items: center;
+    font-size: 22px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 2px;
+    border-left-width: 0px;
+}
+.blue_button{
+    background: #3D9399;
+}
+.red_button{
+    background: #933D3D;
+}
+@media (min-width: 733px){
+    .title_container{
+        width: 490px;
+        height: 100px;
+    }
+    .start_button{
+        width: 490px;
+        height: 65px;
+        font-size: 33px;
+        border-bottom-width: 4px;
+    }
+}
+.quizz_page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.question_container{
+    display: flex;
+    width: 100%;
+    height: 190px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 50px;
+}
+.title_container_flag{
+    display: flex;
+    width: 300px;
+    height: 90px;
+    background-color: #000000;
+    border-radius: 60px;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.flag_name_container{
+    display: flex;
+    width: 250px;
+    height: 60px;
+    background-color: #000000;
+    border-radius: 60px;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+}
+@media (max-width: 733px){
+    .flags_all_container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .flag_container{
+        width: 138px;
+    }
+    .button_pad1{
+        border: none;
+        height: 92px;
+    }
+    .button_pad2{
+        border: none;
+        height: 92px;
+    }
+}
+@media (min-width: 733px){
+    .title_container_flag{
+        font-size: 30px;
+        width: 490px;
+        height: 100px;
+    }
+    .flag_name_container{
+        width: 400px;
+        height: 60px;
+        font-size: 35px;
+    }
+    .one_two_flag{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+    .button_pad1{
+        margin-top: 15px;
+        border: none;
+    }
+    .three_four_flag{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+    .button_pad2{
+        margin-top: 18px;
+        border: none;
+    }
+    .flag_container{
+        width: 240px;
+        height: 160px;
+    }
+}
+.no_display{
+    display: none;
+}
