@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- début du background -->
+    <!-- début du background Saint Marin-->
     <div class="background">
         <!-- page d'accueil  -->
         <div class="home" id="home_page">    
@@ -57,7 +57,7 @@
         <!-- page de bonne réponse  -->
         <div class="ganswer_page no_display" id="good_answer_page1"> 
             <!-- Zone d'annonce si gagné ou perdu -->
-            <h1 class="title_container">Bonne Réponse</h1>
+            <h2 class="title_container">Bonne Réponse</h2>
              <div class="text_button_container">
                 <div class="answer_text_container">
                     <!-- texte pour raconter la création du drapeau ou une anecdote dessus -->
@@ -75,7 +75,7 @@
         <!-- page de réponse  -->
         <div class="wanswer_page no_display" id="wrong_answer_page1"> 
             <!-- Zone d'annonce si gagné ou perdu -->
-            <h1 class="title_container">Mauvaise réponse</h1>
+            <h2 class="title_container">Mauvaise réponse</h2>
              <div class="text_button_container">
                 <div class="answer_text_container">
                     <!-- texte pour raconter la création du drapeau ou une anecdote dessus -->
@@ -90,6 +90,7 @@
              </div>
         </div>  
         <!-- fin de page réponse -->
+
         <!-- page de question avec les drapeaux 2-->
         <div class="no_display quizz_page" id="quizz2">
             <div class="question_container">
@@ -120,9 +121,9 @@
         </div>
         <!-- fin de page question -->
          <!-- page de bonne réponse  -->
-         <div class="ganswer_page no_display" id="idk_why">
+         <div class="ganswer_page no_display" id="good_answer_page_two">
             <!-- Zone d'annonce si gagné ou perdu -->
-            <h1 class="title_container">Bonne Réponse</h1>
+            <h2 class="title_container">Bonne Réponse</h2>
              <div class="text_button_container">
                 <div class="answer_text_container2">
                     <!-- texte pour raconter la création du drapeau ou une anecdote dessus -->
@@ -142,7 +143,7 @@
         <!-- page de réponse  -->
         <div class="wanswer_page no_display" id="wrong_answer_page_two"> 
             <!-- Zone d'annonce si gagné ou perdu -->
-            <h1 class="title_container">Mauvaise réponse</h1>
+            <h2 class="title_container">Mauvaise réponse</h2>
              <div class="text_button_container">
                 <div class="answer_text_container2">
                     <!-- texte pour raconter la création du drapeau ou une anecdote dessus -->
@@ -155,6 +156,78 @@
                 <div>
                     <!-- bouton pour passer a la question suivante -->
                     <button  class="next_button black_button" id="suivant_button_wrong_two">Suivant</button>
+                </div>
+             </div>
+        </div>  
+        <!-- fin de page réponse -->
+
+        <!-- page de question avec les drapeaux 3-->
+        <div class="no_display quizz_page" id="quizz3">
+            <div class="question_container">
+                <!-- Question du quizz -->
+                <h2 class="title_container_flag">Quel est le drapeau de ce pays ?</h2>
+                <!-- Pays concerner par la question -->
+                <h2 class="flag_name_container">Monaco</h2>
+            </div>
+            <div class="flags_all_container">
+            <div class="one_two_flag">
+                <!-- Les 4 drapeaux proposé -->
+                <div >
+                   <button class="button_pad1"><img src="./img/Flags/indonesie_flag.png" alt="Indonesia flag" class="flag_container one_two_flag wrong_answer3"></button>
+                </div>
+                <div>
+                    <button class="button_pad1"><img src="./img/Flags/monaco-26893_1280.webp" alt="Monaco flag" class="flag_container one_two_flag good_answer3"></button>
+                </div>
+            </div>
+            <div class="three_four_flag">
+                <div>
+                    <button class="button_pad2"><img src="./img/Flags/Flag_of_Greenland.svg.png" alt="Greenland flag" class="flag_container three_four_flag wrong_answer3"></button>
+                </div>
+                <div>
+                    <button class="button_pad2"><img src="./img/Flags/bandiera_polonia_cm_20x30.png" alt="Polonia flag" class="flag_container three_four_flag wrong_answer3"></button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- fin de page question -->
+         <!-- page de bonne réponse  -->
+         <div class="ganswer_page no_display" id="good_answer_page_three">
+            <!-- Zone d'annonce si gagné ou perdu -->
+            <h2 class="title_container">Bonne Réponse</h2>
+            <div class="text_button_container">
+               <div class="answer_text_container2">
+                    <!-- texte pour raconter la création du drapeau ou une anecdote dessus -->
+                    <p class="answer_text">
+                        Le drapeau de Monaco est composé de deux bandes horizontales de même largeur, une rouge et l'autre blanche.
+                        Le dessin actuel date de 1881 mais ses couleurs ont été choisies dès le XIVe siècle par la famille Grimaldi. 
+                        Il est confirmé dans l'articlede la constitution de Monaco de 1962.
+                        Hormis les nuances de couleur et les proportions, il est identique au drapeau de l'Indonésie, à celui de la Hesse ou encore au Rot un Wiss historique alsacien.
+                    </p>
+                </div>
+                <div>
+                    <!-- bouton pour passer a la question suivante -->
+                    <button  class="next_button black_button" id="suivant_button_good_three">Suivant</button>
+                </div>
+             </div>
+        </div>  
+        <!-- fin de page bonne réponse -->
+        <!-- page de réponse  -->
+        <div class="wanswer_page no_display" id="wrong_answer_page_three"> 
+            <!-- Zone d'annonce si gagné ou perdu -->
+            <h2 class="title_container">Mauvaise réponse</h2>
+             <div class="text_button_container">
+                <div class="answer_text_container2">
+                    <!-- texte pour raconter la création du drapeau ou une anecdote dessus -->
+                    <p class="answer_text">
+                        Le drapeau de Monaco est composé de deux bandes horizontales de même largeur, une rouge et l'autre blanche.
+                        Le dessin actuel date de 1881 mais ses couleurs ont été choisies dès le XIVe siècle par la famille Grimaldi. 
+                        Il est confirmé dans l'articlede la constitution de Monaco de 1962.
+                        Hormis les nuances de couleur et les proportions, il est identique au drapeau de l'Indonésie, à celui de la Hesse ou encore au Rot un Wiss historique alsacien.
+                    </p>
+                </div>
+                <div>
+                    <!-- bouton pour passer a la question suivante -->
+                    <button  class="next_button black_button" id="suivant_button_wrong_three">Suivant</button>
                 </div>
              </div>
         </div>  
