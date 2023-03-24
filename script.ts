@@ -7,6 +7,9 @@ const quizz1_display: HTMLElement | null = document.getElementById('quizz1')
 const quizz2_display: HTMLElement | null = document.getElementById('quizz2')
 const quizz3_display: HTMLElement | null = document.getElementById('quizz3')
 //
+const end_page: HTMLElement | null = document.getElementById('end_page')
+const go_home_button: HTMLElement | null = document.getElementById('go_home')
+//
 const good_answer: Element | null = document.querySelector('.good_answer')
 const wrong_answer: NodeListOf<Element> = document.querySelectorAll('.wrong_answer')
 //
@@ -30,10 +33,17 @@ const good_answer_display_three: HTMLElement | null = document.getElementById('g
 const next_button_good_three: HTMLElement | null = document.getElementById('suivant_button_good_three')
 const wrong_answer_display_three: HTMLElement | null = document.getElementById('wrong_answer_page_three')
 const next_button_wrong_three: HTMLElement | null = document.getElementById('suivant_button_wrong_three')
+// score et page
+const score_Element: HTMLCollectionOf<Element> = document.getElementsByClassName("score")
+const end_score: HTMLElement | null = document.getElementById('end_score')
+let score: number = 0 //variable qui compte les points
 //
-
 // fin des constante
 //page d'accueil
+for (let i = 0; i < score_Element.length; i++) {
+    const scoreElement = score_Element[i]
+    scoreElement.textContent = `Score: ${score}`
+  }
 function handle_user_click() {
     if (home_display !== null && quizz1_display !== null){
         home_display.classList.add('no_display')
@@ -51,7 +61,12 @@ function handle_click_answer_good_quizz1() {
         quizz1_display.classList.add('no_display')
         good_answer_display.classList.remove('no_display')
         good_answer_display_two.classList.add('no_display')
+        score += 1;
     }
+    for (let i = 0; i < score_Element.length; i++) {
+        const scoreElement = score_Element[i]
+        scoreElement.textContent = `Score: ${score}`
+      }
 }
 function handle_click_answer_wrong_quizz1() {
     if (quizz1_display !== null && wrong_answer_display !== null && wrong_answer_display_two !== null) {
@@ -59,6 +74,10 @@ function handle_click_answer_wrong_quizz1() {
         wrong_answer_display.classList.remove('no_display')
         wrong_answer_display_two.classList.add('no_display')
     }
+    for (let i = 0; i < score_Element.length; i++) {
+        const scoreElement = score_Element[i]
+        scoreElement.textContent = `Score: ${score}`
+      }
 }
 
 if (good_answer !== null) {
@@ -75,6 +94,10 @@ function handle_user_next_for_good(): void {
         good_answer_display.classList.add('no_display')
         quizz2_display.classList.remove('no_display')
     }
+    for (let i = 0; i < score_Element.length; i++) {
+        const scoreElement = score_Element[i]
+        scoreElement.textContent = `Score: ${score}`
+      }
 }
 
 if (next_button_good !== null) {
@@ -86,6 +109,10 @@ function handle_user_next_for_wrong(): void {
         wrong_answer_display.classList.add('no_display')
         quizz2_display.classList.remove('no_display')
     }
+    for (let i = 0; i < score_Element.length; i++) {
+        const scoreElement = score_Element[i]
+        scoreElement.textContent = `Score: ${score}`
+      }
 }
 
 if (next_button_wrong !== null) {
@@ -97,13 +124,22 @@ function handle_click_answer_good_quizz2() {
     if (quizz2_display !== null && good_answer_display_two !== null) {
         quizz2_display.classList.add('no_display')
         good_answer_display_two.classList.remove('no_display')
+        score += 1;
     }
+    for (let i = 0; i < score_Element.length; i++) {
+        const scoreElement = score_Element[i]
+        scoreElement.textContent = `Score: ${score}`
+      }
 }
 function handle_click_answer_wrong_quizz2() {
     if (quizz2_display !== null && wrong_answer_display_two !== null) {
         quizz2_display.classList.add('no_display')
         wrong_answer_display_two.classList.remove('no_display')
     }
+    for (let i = 0; i < score_Element.length; i++) {
+        const scoreElement = score_Element[i]
+        scoreElement.textContent = `Score: ${score}`
+      }
 }
 
 if (good_answer2 !== null) {
@@ -120,6 +156,10 @@ function handle_user_next_for_good2(): void {
         good_answer_display_two.classList.add('no_display')
         quizz3_display.classList.remove('no_display')
     }
+    for (let i = 0; i < score_Element.length; i++) {
+        const scoreElement = score_Element[i]
+        scoreElement.textContent = `Score: ${score}`
+      }
 }
 
 if (next_button_good_two !== null) {
@@ -131,6 +171,10 @@ function handle_user_next_for_wrong2(): void {
         wrong_answer_display_two.classList.add('no_display')
         quizz3_display.classList.remove('no_display')
     }
+    for (let i = 0; i < score_Element.length; i++) {
+        const scoreElement = score_Element[i]
+        scoreElement.textContent = `Score: ${score}`
+      }
 }
 
 if (next_button_wrong_two !== null) {
@@ -142,13 +186,23 @@ function handle_click_answer_good_quizz3() {
     if (quizz3_display !== null && good_answer_display_three !== null) {
         quizz3_display.classList.add('no_display')
         good_answer_display_three.classList.remove('no_display')
+        score += 1;
+        console.log(`Your score is ${score}`)
     }
+    for (let i = 0; i < score_Element.length; i++) {
+        const scoreElement = score_Element[i]
+        scoreElement.textContent = `Score: ${score}`
+      }
 }
 function handle_click_answer_wrong_quizz3() {
     if (quizz3_display !== null && wrong_answer_display_three !== null) {
         quizz3_display.classList.add('no_display')
         wrong_answer_display_three.classList.remove('no_display')
     }
+    for (let i = 0; i < score_Element.length; i++) {
+        const scoreElement = score_Element[i]
+        scoreElement.textContent = `Score: ${score}`
+      }
 }
 
 if (good_answer3 !== null) {
@@ -161,9 +215,10 @@ for (let i = 0; i < wrong_answer3.length; i++) {
 //fin de page
 //page de réponse 3
 function handle_user_next_for_good3(): void {
-    if (quizz3_display !== null && good_answer_display_three !== null && good_answer_display_three !== null){
+    if (end_page !== null && good_answer_display_three !== null && wrong_answer_display_three !== null && end_score !== null){
         good_answer_display_three.classList.add('no_display')
-        quizz3_display.classList.remove('no_display')
+        end_page.classList.remove('no_display')
+        end_score.textContent = `Votre score est: ${score}/3`
     }
 }
 
@@ -172,13 +227,33 @@ if (next_button_good_three !== null) {
 }
 
 function handle_user_next_for_wrong3(): void {
-    if (quizz3_display !== null && good_answer_display_three !== null && wrong_answer_display_three !== null){
+    if (end_page !== null && good_answer_display_three !== null && wrong_answer_display_three !== null && end_score !== null){
         wrong_answer_display_three.classList.add('no_display')
-        quizz3_display.classList.remove('no_display')
+        end_page.classList.remove('no_display')
+        end_score.textContent = `Votre score est: ${score}/3`
     }
 }
 
 if (next_button_wrong_three !== null) {
     next_button_wrong_three.addEventListener('click', handle_user_next_for_wrong3)
 }
-//fin page
+//fin de page
+//page de fin
+function handle_user_click_for_home() {
+    if (home_display !== null && end_page !== null){
+        end_page.classList.add('no_display')
+        home_display.classList.remove('no_display')
+        score = 0
+        console.log(`Your score is ${score}`)
+    }
+    for (let i = 0; i < score_Element.length; i++) {
+        const scoreElement = score_Element[i]
+        scoreElement.textContent = `Votre score est: ${score}/3`
+      }
+}
+
+if (go_home_button !== null) {
+    go_home_button.addEventListener('click', handle_user_click_for_home)
+}
+
+//fin de page
