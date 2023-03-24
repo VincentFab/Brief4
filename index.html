@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- début du background -->
+    <!-- début du background Saint Marin-->
     <div class="background">
         <!-- page d'accueil  -->
-        <div class="home" id="home_page">    
+        <div class="score_container" id="home_page">
+            <div class="score_page">
+               <div class="score">Score: 0</div>
+           </div>
+        <div class="home">    
             <h1 class="title_container">Quizz des Drapeaux</h1>
              <div class="button_container">
                 <div> 
@@ -24,9 +28,14 @@
                 </div>
              </div>
         </div>
+    </div>
         <!-- fin de page d'accueil -->
-        <!-- page de question avec les drapeaux -->
-        <div class="no_display quizz_page" id="quizz">
+        <!-- page de question avec les drapeaux 1-->
+        <div class="score_container no_display" id="quizz1">
+            <div class="score_page">
+               <div class="score">Score: 0</div>
+           </div>
+        <div class=" quizz_page">
             <div class="question_container">
                 <!-- Question du quizz -->
                 <h2 class="title_container_flag">Quel est le drapeau de ce pays ?</h2>
@@ -40,7 +49,7 @@
                    <button class="button_pad1"><img src="./img/Flags/Flag_of_Barbados.svg.png" alt="Barbados flag" class="flag_container one_two_flag wrong_answer"></button>
                 </div>
                 <div>
-                    <button class="button_pad1"><img src="./img/Flags/Flag_of_Eswatini.svg.png" alt="Eswatini flag" class="flag_container one_two_flag wrong_answer" id="test"></button>
+                    <button class="button_pad1"><img src="./img/Flags/Flag_of_Eswatini.svg.png" alt="Eswatini flag" class="flag_container one_two_flag wrong_answer"></button>
                 </div>
             </div>
             <div class="three_four_flag">
@@ -53,11 +62,16 @@
             </div>
             </div>
         </div>
+        </div>
         <!-- fin de page question -->
         <!-- page de bonne réponse  -->
-        <div class="ganswer_page no_display" id="good_answer_page"> 
+        <div class="score_container no_display" id="good_answer_page1">
+            <div class="score_page">
+               <div class="score">Score: 0</div>
+           </div>
+        <div class="ganswer_page "> 
             <!-- Zone d'annonce si gagné ou perdu -->
-            <h1 class="title_container">Bonne Réponse</h1>
+            <h2 class="title_container">Bonne Réponse</h2>
              <div class="text_button_container">
                 <div class="answer_text_container">
                     <!-- texte pour raconter la création du drapeau ou une anecdote dessus -->
@@ -67,15 +81,20 @@
                 </div>
                 <div>
                     <!-- bouton pour passer a la question suivante -->
-                    <button  class="next_button black_button" id="suivant_button_good">Suivant</button>
+                    <button  class="next_button black_button" id="suivant_button_good1">Suivant</button>
                 </div>
              </div>
         </div>  
+        </div>
         <!-- fin de page bonne réponse -->
         <!-- page de réponse  -->
-        <div class="wanswer_page no_display" id="wrong_answer_page"> 
+        <div class="score_container no_display" id="wrong_answer_page1">
+            <div class="score_page">
+               <div class="score">Score: 0</div>
+           </div>
+        <div class="wanswer_page "> 
             <!-- Zone d'annonce si gagné ou perdu -->
-            <h1 class="title_container">Mauvaise réponse</h1>
+            <h2 class="title_container">Mauvaise réponse</h2>
              <div class="text_button_container">
                 <div class="answer_text_container">
                     <!-- texte pour raconter la création du drapeau ou une anecdote dessus -->
@@ -85,11 +104,202 @@
                 </div>
                 <div>
                     <!-- bouton pour passer a la question suivante -->
-                    <button  class="next_button black_button" id="suivant_button_wrong">Suivant</button>
+                    <button  class="next_button black_button" id="suivant_button_wrong1">Suivant</button>
                 </div>
              </div>
         </div>  
+        </div>
         <!-- fin de page réponse -->
+
+        <!-- page de question avec les drapeaux 2-->
+        <div class="score_container no_display" id="quizz2">
+            <div class="score_page">
+               <div class="score">Score: 0</div>
+           </div>
+        <div class=" quizz_page">
+            <div class="question_container">
+                <!-- Question du quizz -->
+                <h2 class="title_container_flag">Quel est le drapeau de ce pays ?</h2>
+                <!-- Pays concerner par la question -->
+                <h2 class="flag_name_container">Saint Marin</h2>
+            </div>
+            <div class="flags_all_container">
+            <div class="one_two_flag">
+                <!-- Les 4 drapeaux proposé -->
+                <div >
+                   <button class="button_pad1"><img src="./img/Flags/Flag_of_Eswatini.svg.png" alt="Eswatini flag" class="flag_container one_two_flag wrong_answer2"></button>
+                </div>
+                <div>
+                    <button class="button_pad1"><img src="./img/Flags/Flag_of_San_Marino.svg.png" alt="San Marino flag" class="flag_container one_two_flag good_answer2"></button>
+                </div>
+            </div>
+            <div class="three_four_flag">
+                <div>
+                    <button class="button_pad2"><img src="./img/Flags/Flag_of_Barbados.svg.png" alt="Barbados flag" class="flag_container three_four_flag wrong_answer2"></button>
+                </div>
+                <div>
+                    <button class="button_pad2"><img src="./img/Flags/Flag_of_Somalia.svg.png" alt="Somalia flag" class="flag_container three_four_flag wrong_answer2"></button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- fin de page question -->
+         <!-- page de bonne réponse  -->
+         <div class="score_container no_display" id="good_answer_page_two">
+            <div class="score_page">
+               <div class="score">Score: 0</div>
+           </div>
+         <div class="ganswer_page ">
+            <!-- Zone d'annonce si gagné ou perdu -->
+            <h2 class="title_container">Bonne Réponse</h2>
+             <div class="text_button_container">
+                <div class="answer_text_container2">
+                    <!-- texte pour raconter la création du drapeau ou une anecdote dessus -->
+                    <p class="answer_text">
+                        Le plus ancien drapeau attesté de la république est datée du 4 septembre 1465, lorsqu'il est commandé dans une manufacture de Florence. Il s'agit d'un drapeau tricolore horizontale, composé d'orange, de blanc et de violet, avec les anciennes armoiries de Saint-Marin placées au centre.
+                        En 1797, probablement influencé par le mouvement de réformes en France, le Grand Conseil général de la république saint-marinaise décide de l'utilisation d'une cocarde blanche et bleue, qui coïncide ou non avec celle choisie par les Français révolutionnaires.
+                        <br>Le 22 juillet 2011, une loi constitutionnelle promulguée le 9 août de la même année, réglemente et fixe définitivement l'utilisation, les couleurs et la conception des armoiries et du drapeau, annulant ainsi la loi de 1974. Les dimensions du drapeau restent 3:4 mais il est permis d'utiliser le ratio le plus commun, c'est-à-dire 2:3, dans les évènements internationaux et sportifs.
+                    </p>
+                </div>
+                <div>
+                    <!-- bouton pour passer a la question suivante -->
+                    <button  class="next_button black_button" id="suivant_button_good_two">Suivant</button>
+                </div>
+             </div>
+        </div>  
+         </div>
+        <!-- fin de page bonne réponse -->
+        <!-- page de réponse  -->
+        <div class="score_container no_display" id="wrong_answer_page_two">
+            <div class="score_page">
+               <div class="score">Score: 0</div>
+           </div>
+        <div class="wanswer_page "> 
+            <!-- Zone d'annonce si gagné ou perdu -->
+            <h2 class="title_container">Mauvaise réponse</h2>
+             <div class="text_button_container">
+                <div class="answer_text_container2">
+                    <!-- texte pour raconter la création du drapeau ou une anecdote dessus -->
+                    <p class="answer_text">
+                        Le plus ancien drapeau attesté de la république est datée du 4 septembre 1465, lorsqu'il est commandé dans une manufacture de Florence. Il s'agit d'un drapeau tricolore horizontale, composé d'orange, de blanc et de violet, avec les anciennes armoiries de Saint-Marin placées au centre.
+                        En 1797, probablement influencé par le mouvement de réformes en France, le Grand Conseil général de la république saint-marinaise décide de l'utilisation d'une cocarde blanche et bleue, qui coïncide ou non avec celle choisie par les Français révolutionnaires.
+                        <br>Le 22 juillet 2011, une loi constitutionnelle promulguée le 9 août de la même année, réglemente et fixe définitivement l'utilisation, les couleurs et la conception des armoiries et du drapeau, annulant ainsi la loi de 1974. Les dimensions du drapeau restent 3:4 mais il est permis d'utiliser le ratio le plus commun, c'est-à-dire 2:3, dans les évènements internationaux et sportifs.
+                    </p>
+                </div>
+                <div>
+                    <!-- bouton pour passer a la question suivante -->
+                    <button  class="next_button black_button" id="suivant_button_wrong_two">Suivant</button>
+                </div>
+             </div>
+        </div>  
+        </div>
+        <!-- fin de page réponse -->
+
+        <!-- page de question avec les drapeaux 3-->
+        <div class="score_container no_display" id="quizz3">
+            <div class="score_page">
+               <div class="score">Score: 0</div>
+           </div>
+        <div class="quizz_page">
+            <div class="question_container">
+                <!-- Question du quizz -->
+                <h2 class="title_container_flag end_page_container">Quel est le drapeau de ce pays ?</h2>
+                <!-- Pays concerner par la question -->
+                <h2 class="flag_name_container">Monaco</h2>
+            </div>
+            <div class="flags_all_container">
+            <div class="one_two_flag">
+                <!-- Les 4 drapeaux proposé -->
+                <div >
+                   <button class="button_pad1"><img src="./img/Flags/indonesie_flag.png" alt="Indonesia flag" class="flag_container one_two_flag wrong_answer3"></button>
+                </div>
+                <div>
+                    <button class="button_pad1"><img src="./img/Flags/monaco-26893_1280.webp" alt="Monaco flag" class="flag_container one_two_flag good_answer3"></button>
+                </div>
+            </div>
+            <div class="three_four_flag">
+                <div>
+                    <button class="button_pad2"><img src="./img/Flags/Flag_of_Greenland.svg.png" alt="Greenland flag" class="flag_container three_four_flag wrong_answer3"></button>
+                </div>
+                <div>
+                    <button class="button_pad2"><img src="./img/Flags/bandiera_polonia_cm_20x30.png" alt="Polonia flag" class="flag_container three_four_flag wrong_answer3"></button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- fin de page question -->
+         <!-- page de bonne réponse  -->
+         <div class="score_container no_display" id="good_answer_page_three">
+            <div class="score_page">
+               <div class="score">Score: 0</div>
+           </div>
+         <div class="ganswer_page">
+            <!-- Zone d'annonce si gagné ou perdu -->
+            <h2 class="title_container">Bonne Réponse</h2>
+            <div class="text_button_container">
+               <div class="answer_text_container2">
+                    <!-- texte pour raconter la création du drapeau ou une anecdote dessus -->
+                    <p class="answer_text">
+                        Le drapeau de Monaco est composé de deux bandes horizontales de même largeur, une rouge et l'autre blanche.
+                        Le dessin actuel date de 1881 mais ses couleurs ont été choisies dès le XIVe siècle par la famille Grimaldi. 
+                        Il est confirmé dans l'articlede la constitution de Monaco de 1962.
+                        Hormis les nuances de couleur et les proportions, il est identique au drapeau de l'Indonésie, à celui de la Hesse ou encore au Rot un Wiss historique alsacien.
+                    </p>
+                </div>
+                <div>
+                    <!-- bouton pour passer a la question suivante -->
+                    <button  class="next_button black_button" id="suivant_button_good_three">Suivant</button>
+                </div>
+             </div>
+        </div>  
+         </div>
+        <!-- fin de page bonne réponse -->
+        <!-- page de réponse  -->
+        <div class="score_container no_display" id="wrong_answer_page_three">
+            <div class="score_page">
+               <div class="score">Score: 0</div>
+           </div>
+        <div class="wanswer_page" > 
+            <!-- Zone d'annonce si gagné ou perdu -->
+            <h2 class="title_container">Mauvaise réponse</h2>
+             <div class="text_button_container">
+                <div class="answer_text_container2">
+                    <!-- texte pour raconter la création du drapeau ou une anecdote dessus -->
+                    <p class="answer_text">
+                        Le drapeau de Monaco est composé de deux bandes horizontales de même largeur, une rouge et l'autre blanche.
+                        Le dessin actuel date de 1881 mais ses couleurs ont été choisies dès le XIVe siècle par la famille Grimaldi. 
+                        Il est confirmé dans l'articlede la constitution de Monaco de 1962.
+                        Hormis les nuances de couleur et les proportions, il est identique au drapeau de l'Indonésie, à celui de la Hesse ou encore au Rot un Wiss historique alsacien.
+                    </p>
+                </div>
+                <div>
+                    <!-- bouton pour passer a la question suivante -->
+                    <button  class="next_button black_button" id="suivant_button_wrong_three">Suivant</button>
+                </div>
+             </div>
+        </div>  
+        </div>
+        <!-- fin de page réponse -->
+         <!-- page de fin -->
+         <div class="home no_display" id="end_page">
+            <h1 class="title_container">Résultat du Quizz</h1>
+            <div class="score_page">
+                <div class="score" id="end_score">Score: 0</div>
+            </div>
+             <div class="button_container2">
+                <div> 
+                    <!-- bouton de décor -->
+                    <button  class="start_button blue_button">Un autre Quizz ?</button>
+                </div>
+                <div>
+                    <!-- bouton de lancement de la partie -->
+                    <button  class="start_button red_button" id="go_home">Retourne a l'accueil</button>
+                </div>
+             </div>
+        </div>
+        <!-- fin de page d'accueil -->
     </div>  
     <!-- fin du background-->
     <!-- Le <script src="./script.ts"></script> doit toujours être le dernier du <body> -->
